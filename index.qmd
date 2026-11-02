@@ -452,14 +452,6 @@ If the diversity increases at hgiher levels of q, that means that this aphid pre
 > @Levins1968 was the first to propose measuring niche width in this way, suggesting two metrics: $-\sum_i{p_i \log(p_i)}$ and $\sum_i{\frac{1}{p_i^2}}$, where $p_i$ is the probability that an aphid is found in habitat $i$.
 > Identify these two metrics.
 
-```{r}
-# Shannon entropy
-ent_shannon(pielou_niches, estimator = "naive")
-
-# Simpson diversity (order-2 Hill number): sum(1 / p_i^2)
-div_hill(pielou_niches, q = 2, estimator = "naive")
-```
-
 First measure is Shannon entropy, second is inverse Simpson concentration
 
 ### Niche overlap
